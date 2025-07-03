@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="dialogPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+    minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" styleClass="dialog-pane"
+    stylesheets="@style.css"
+    fx:controller="volungemv2.controllers.volunteer.AddVolunteerController" xmlns="http://javafx.com/javafx/23.0.1"
+    xmlns:fx="http://javafx.com/fxml/1">
+    <graphic>
+        <GridPane hgap="5.0" prefHeight="300.0" prefWidth="450.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.20001220703125" minWidth="10.0"
+                    prefWidth="129.40001220703124" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.3999877929688" minWidth="10.0"
+                    prefWidth="285.3999877929688" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="label_namaVolunteer" text="Nama Volunteer">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textField_namaVolunteer" styleClass="textField"
+                    stylesheets="@style.css" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Century Gothic" size="14.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="label_kontak" text="Kontak" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_kelompok" text="Kelompok" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_umur" text="Umur" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textField_kontak" styleClass="textField" stylesheets="@style.css"
+                    GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Century Gothic" size="14.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="comboBox_kelompok" prefHeight="26.0" prefWidth="285.0"
+                    stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <styleClass>
+                        <String fx:value="choiceBox" />
+                        <String fx:value="comboBox" />
+                    </styleClass>
+                </ComboBox>
+                <Label fx:id="label_assignedTask" text="Penugasan" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textField_umur" styleClass="textField" stylesheets="@style.css"
+                    GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Century Gothic" size="14.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="label_jenisKelamin" text="Jenis Kelamin" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Century Gothic Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="comboBox_jenisKelamin" prefHeight="26.0" prefWidth="285.0"
+                    stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <styleClass>
+                        <String fx:value="choiceBox" />
+                        <String fx:value="comboBox" />
+                    </styleClass>
+                </ComboBox>
+                <TextField fx:id="textField_penugasan" styleClass="textField"
+                    stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Century Gothic" size="14.0" />
+                    </font>
+                </TextField>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </GridPane>
+    </graphic>
+</DialogPane>

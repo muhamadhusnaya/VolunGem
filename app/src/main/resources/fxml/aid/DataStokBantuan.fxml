@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox_content" prefHeight="1080.0" prefWidth="1520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="volungemv2.controllers.aid.DataStokBantuanController">
+   <children>
+      <HBox prefHeight="80.0" prefWidth="1520.0">
+         <children>
+            <AnchorPane fx:id="anchorPane_navbar" prefHeight="80.5" prefWidth="1520.0" styleClass="anchorPane_navbar" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="label_breadcrumb" layoutX="14.0" layoutY="30.0" text="Manajemen Aplikasi / Data Stok Bantuan">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="image_profileIcon" fitHeight="42.0" fitWidth="91.0" layoutX="997.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/img/profileIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="label_user" layoutX="940.0" layoutY="30.0" text="admin">
+                     <font>
+                        <Font name="Century Gothic Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="anchorPane_content" prefHeight="688.0" prefWidth="1058.0">
+         <children>
+            <Label fx:id="label_contentTitle" layoutX="14.0" layoutY="14.0" text="Data Stok Bantuan">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView_dataStokBantuan" layoutX="29.0" layoutY="138.0" prefHeight="530.0" prefWidth="1006.0" styleClass="tableView" stylesheets="@style.css">
+               <columns>
+                  <TableColumn fx:id="tableColumn_kategori" prefWidth="179.9999942779541" text="Kategori" />
+                  <TableColumn fx:id="tableColumn_namaBarang" prefWidth="318.40000915527344" text="Nama Barang" />
+                  <TableColumn fx:id="tableColumn_stok" prefWidth="124.0" text="Stok" />
+                  <TableColumn fx:id="tableColumn_lokasi" prefWidth="391.2000732421875" text="Lokasi" />
+               </columns>
+            </TableView>
+            <Button fx:id="button_add" layoutX="29.0" layoutY="93.0" mnemonicParsing="false" styleClass="button_add" stylesheets="@style.css" text="Add ✚">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_delete" layoutX="229.0" layoutY="93.0" mnemonicParsing="false" styleClass="button_delete" stylesheets="@style.css" text="Delete 🗑">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_update" layoutX="117.0" layoutY="93.0" mnemonicParsing="false" styleClass="button_update" stylesheets="@style.css" text="Update ✎">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

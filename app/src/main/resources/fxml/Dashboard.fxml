@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox_content" prefHeight="1080.0" prefWidth="1520.0"
+    xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="volungemv2.controllers.DashboardController">
+    <children>
+        <HBox prefHeight="80.0" prefWidth="1520.0">
+            <children>
+                <AnchorPane fx:id="anchorPane_navbar" prefHeight="80.5" prefWidth="1520.0"
+                    styleClass="anchorPane_navbar" stylesheets="@style.css">
+                    <children>
+                        <Label fx:id="label_breadcrumb" layoutX="14.0" layoutY="30.0"
+                            text="Manajemen Aplikasi / Dashboard">
+                            <font>
+                                <Font name="Century Gothic Bold Italic" size="15.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image_profileIcon" fitHeight="42.0" fitWidth="91.0"
+                            layoutX="997.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/img/profileIcon.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="label_user" layoutX="940.0" layoutY="30.0" text="admin">
+                            <font>
+                                <Font name="Century Gothic Bold Italic" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <InnerShadow height="10.0" radius="4.5" width="10.0" />
+                    </effect>
+                </AnchorPane>
+            </children>
+        </HBox>
+        <AnchorPane fx:id="anchorPane_content" prefHeight="688.0" prefWidth="1058.0">
+            <children>
+                <Label fx:id="label_contentTitle" layoutX="14.0" layoutY="14.0" text="DASHBOARD">
+                    <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_titleDetail" layoutX="14.0" layoutY="45.0"
+                    text="Selamat Datang di Manajemen VolunGem">
+                    <font>
+                        <Font name="Century Gothic" size="24.0" />
+                    </font>
+                </Label>
+                <VBox layoutX="37.0" layoutY="107.0" prefHeight="170.0" prefWidth="300.0">
+                    <children>
+                        <AnchorPane fx:id="anchorPane_widget1" prefHeight="170.0" prefWidth="300.0"
+                            styleClass="anchorPane_widget" stylesheets="@style.css">
+                            <children>
+                                <ImageView fx:id="imageView_volunteer" fitHeight="106.0"
+                                    fitWidth="106.0" layoutX="172.0" layoutY="14.0"
+                                    pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/img/volunteerIcon.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="label_totalVolunteer" layoutX="14.0" layoutY="25.0"
+                                    text="68" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="64.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="label_totalVolunteerDetail" layoutX="14.0"
+                                    layoutY="130.0" text="Total Volunteer" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <VBox layoutX="366.0" layoutY="107.0" prefHeight="170.0" prefWidth="300.0">
+                    <children>
+                        <AnchorPane fx:id="anchorPane_widget2" prefHeight="170.0" prefWidth="300.0"
+                            styleClass="anchorPane_widget" stylesheets="@style.css">
+                            <children>
+                                <ImageView fx:id="imageView_stok" fitHeight="106.0" fitWidth="106.0"
+                                    layoutX="174.0" layoutY="14.0" pickOnBounds="true"
+                                    preserveRatio="true">
+                                    <image>
+                                        <Image url="/img/stokIcon.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="label_totalStok" layoutX="14.0" layoutY="25.0"
+                                    text="68" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="64.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="label_totalStokDetail" layoutX="14.0" layoutY="131.0"
+                                    text="Total Stok" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <VBox layoutX="695.0" layoutY="107.0" prefHeight="170.0" prefWidth="300.0">
+                    <children>
+                        <AnchorPane fx:id="anchorPane_widget3" prefHeight="170.0" prefWidth="300.0"
+                            styleClass="anchorPane_widget" stylesheets="@style.css">
+                            <children>
+                                <ImageView fx:id="imageView_report" fitHeight="106.0"
+                                    fitWidth="106.0" layoutX="174.0" layoutY="14.0"
+                                    pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/img/reportIcon.png" />
+                                    </image>
+                                </ImageView>
+                                <Label fx:id="label_totalReport" layoutX="14.0" layoutY="25.0"
+                                    text="68" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="64.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="label_totalReportDetail" layoutX="14.0"
+                                    layoutY="131.0" text="Total Report" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <TableView fx:id="tableView_daftarVolunteer" layoutX="37.0" layoutY="301.0"
+                    prefHeight="349.0" prefWidth="458.0" styleClass="tableView"
+                    stylesheets="@style.css">
+                    <columns>
+                        <TableColumn fx:id="tableColumn_namaVolunteer" prefWidth="177.6000213623047"
+                            text="Nama Volunteer" />
+                        <TableColumn fx:id="tableColumn_kontak" minWidth="0.0" prefWidth="140.0"
+                            text="Kontak" />
+                        <TableColumn fx:id="tableColumn_kelompok" prefWidth="139.19998779296873"
+                            text="Kelompok" />
+                    </columns>
+                </TableView>
+                <TableView fx:id="tableView_laporanMonitoring" layoutX="536.0" layoutY="301.0"
+                    prefHeight="349.0" prefWidth="458.0" styleClass="tableView"
+                    stylesheets="@style.css">
+                    <columns>
+                        <TableColumn fx:id="tableColumn_jenisLaporan" prefWidth="148.0"
+                            text="Jenis Laporan" />
+                        <TableColumn fx:id="tableColumn_tanggal" prefWidth="122.4000244140625"
+                            text="Tanggal" />
+                        <TableColumn fx:id="tableColumn_deskripsi" prefWidth="187.99993896484375"
+                            text="Deskripsi" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
